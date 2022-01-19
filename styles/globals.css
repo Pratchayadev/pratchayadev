@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Prompt", sans-serif;
+  /* background-color: rgb(245, 245, 245); */
 }
 
 a {
@@ -13,4 +13,264 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.list-personal {
+  font-size: 12px;
+  color: rgb(59, 59, 59);
+}
+.list-item-custom {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* intro page */
+
+.app--intro {
+  background-color: rgb(15, 15, 15);
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url('/assets/images/cover.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.main--intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+}
+.superkey--intro {
+  color: white;
+  font-size: 80px;
+  font-weight: 100;
+  letter-spacing: 1.5rem;
+  text-align: center;
+  margin: 0;
+  /* text-shadow: 10px 5px 5px black; */
+}
+.subkey--intro {
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 1rem;
+  text-align: center;
+  margin: 0;
+}
+.footer--intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0);
+  height: 50px;
+  width: 100%;
+  padding: 5px 15px;
+  color: rgb(200, 200, 200);
+}
+.exit-bottom{
+  position: fixed;
+  top: 10px;
+  right: 10px; 
+  z-index: 100;
+}
+.footer-icon-box--intro {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-icon-box--intro * {
+  color: rgb(200, 200, 200);
+}
+
+.sidebar--intro {
+  /* display: none; */
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(15, 15, 15, 0.1);
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: 0.3s;
+  transform: translateX(-100vw);
+}
+
+.sec-profile {
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+.con-profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 150px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.group-profile-detail {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.group-profile-title {
+  color: rgb(235, 235, 235);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.objective-profile-title {
+  color: rgb(235, 235, 235);
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.group-profile-list {
+  color: rgb(207, 207, 207);
+  list-style-type: none;
+  padding-left: 5px;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.sec-cover {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(20, 20, 20);
+  background-image: url("/assets/images/wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.sec-in-cover {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(0, 0, 0, 0.8);
+  padding: 20px;
+}
+
+.sec-objective {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.line-hr {
+  height: 2px;
+  width: 20%;
+  background-color: rgb(21, 116, 79);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.detail-other {
+  color: rgb(199, 199, 199);
+  font-weight: 100;
+  font-size: 12px;
+  margin: 0;
+  margin-top: 10px;
+}
+.sec-experience {
+  background-color: rgb(0, 0, 0, 0.8);
+  margin: 10px;
+  padding: 20px;
+}
+.title-experience {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+.small-detail {
+  color: gray;
+}
+@keyframes slideShow {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .superkey--intro{
+    font-size: 30px;
+    letter-spacing: 1rem;
+  }
+  .subkey--intro{
+    font-size: 12px;
+    letter-spacing: 0.5rem;
+  }
+  .btn-control{
+    font-size: 10px;
+  }
+  .footer--intro small{
+    display: none;
+  }
+  .footer--intro{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center;
+    width: 100vw;
+  }
+  .sec-profile {
+    background-color: rgb(20, 20, 20);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  .group-profile-detail {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .sec-cover {
+    width: 100%;
+    height: auto;
+    background-color: rgb(20, 20, 20);
+    background-image: url("/assets/images/wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .detail-other{
+    font-size: 10px;
+  }
 }
