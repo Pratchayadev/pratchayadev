@@ -30,6 +30,10 @@ const theme = createTheme({
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
+const myLoader = ({ src, width, quality }) => {
+  return `/assets/images/profile.jpeg/${src}?w=${width}&q=${quality || 75}`
+}
+
   const toggleSidebar = () => {
     var fadeTarget = document.querySelector(".main--intro");
     var toggleTarget = document.querySelector(".sidebar--intro");
@@ -121,6 +125,7 @@ function Home() {
                 <div className="sec-profile">
                   <div className="con-profile-img">
                     <Image
+                      loader={myLoader}
                       src="/assets/images/profile.jpeg"
                       width={200}
                       height={200}
