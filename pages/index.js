@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Head from  "next/head"
 import { IconButton, Button, ThemeProvider, Grid } from "@mui/material";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -77,6 +78,9 @@ function Home() {
 
   return (
     <div>
+      <Head>
+        <title>Pratchayadev</title>
+      </Head>
       {isOpen ? (
         <ThemeProvider theme={theme}>
           <IconButton
