@@ -261,7 +261,7 @@ a {
     width: 100%;
     height: auto;
     background-color: rgb(20, 20, 20);
-    background-image: url("/assets/images/wallpaper.jpg");
+    /* background-image: url("/assets/images/wallpaper.jpg"); */
     background-position: center;
     background-size: cover;
     padding: 20px;
