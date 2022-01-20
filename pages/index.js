@@ -122,7 +122,8 @@ function Home() {
                   <div className="con-profile-img">
                     <Image
                       src="/assets/images/profile.jpeg"
-                      width="100%"
+                      width={200}
+                      height={200}
                       alt="profile"
                     />
                   </div>
