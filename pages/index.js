@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-import {
-  IconButton,
-  Button,
-  ThemeProvider,
-  Grid,
-} from "@mui/material";
+import Image from "next/image";
+import { IconButton, Button, ThemeProvider, Grid } from "@mui/material";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -124,7 +120,11 @@ function Home() {
               <Grid item xs={12} md={3} lg={2}>
                 <div className="sec-profile">
                   <div className="con-profile-img">
-                    <img src="/assets/images/profile.jpeg" width="100%" />
+                    <Image
+                      src="/assets/images/profile.jpeg"
+                      width="100%"
+                      alt="profile"
+                    />
                   </div>
                   <div className="group-profile-detail">
                     <p className="group-profile-title">Personal Details</p>
@@ -172,7 +172,7 @@ function Home() {
                             <br />
                             I am interested in is Web/App Developer
                             <br />
-                            And I'm always interested in programming and
+                            And I{`'`}m always interested in programming and
                             learning new things.
                           </span>
                         </div>
@@ -237,8 +237,6 @@ function Home() {
                       </div>
                     </Grid>
                   </Grid>
-                 
-                
                 </div>
               </Grid>
             </Grid>
