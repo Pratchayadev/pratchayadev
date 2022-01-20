@@ -6,7 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import CloseIcon from "@mui/icons-material/Close";
 import { createTheme } from "@mui/material/styles";
-const imageWallpaper = require('../public/assets/images/wallpaper.jpg')
+
 
 const theme = createTheme({
   status: {
@@ -165,7 +165,7 @@ function Home() {
                 </div>
               </Grid>
               <Grid item xs={12} md={9} lg={10}>
-                <div className="sec-cover" style={{backgroundImage: `url(${imageWallpaper})`}}>
+                <div className="sec-cover">
                   <Grid container>
                     <Grid item xs={12} md={4} lg={4} padding={1}>
                       <div className="sec-in-cover">
